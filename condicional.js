@@ -156,4 +156,106 @@ function Ejercico2(){
 
     }
      //Ejercicio10()
+
+
+
+     //tp2
+
+     /*1- Algoritmo que pida números hasta que se introduzca un cero. 
+     Debe mostrar la suma y el promedio de todos los números introducidos.*/
+
+     function Ejercicio1tp2(){
+      let numero
+      let acumulador= 0
+      let contador = 0
+      
+
+      while(numero!==0){ 
+        numero=parseInt(prompt("ingrese un numero"))
+       if(numero!==0){
+        acumulador+=numero //acumulador = acumulador+numero
+        contador++
+        console.log(numero)
+       }
+      }
+      console.log("El promedio es "+acumulador/contador)
+      console.log("La suma de los numeros es :"+ acumulador++)
+
+     }
+     //Ejercicio1tp2()
+
+     /*2- Realizar un algoritmo que pida números (se pedirá por teclado la cantidad de números a introducir). 
+     El programa debe informar de cuantos números introducidos son mayores que 0, menores que 0 e iguales a 0.*/
+
+     function Ejercicio2tp2(){
+        let cantidadDeNumeros = parseInt(prompt("¿Cuantos numeros desea ingresar?"))
+        console.log("Va a ingresar "+ cantidadDeNumeros)
+        let contador = 0
+        let mayores=0
+        let menores=0
+        let ceros=0
+        //siempre se define un valor asi con los ++ le permite ir sumando y pisando el valor inicial
+        while(contador<cantidadDeNumeros){ 
+            numero=parseInt(prompt("ingrese un numero"))
+            console.log(numero)
+            contador++
+            console.log("el contador vale "+contador)
+            if(numero>0){
+                mayores++
+            }else{
+                if(numero<0){
+                    menores++
+                }else{
+                    ceros++
+                }
+            } 
+        }
+        
+        console.log("De los numeros que introducio hay : " + mayores+ " mayores a 0, "+ menores+ " menores, y " +ceros+ " ceros.")
+     }
+     //Ejercicio2tp2()
+
+     /*3- Algoritmo que pida caracteres e imprima ‘VOCAL’ si son vocales y ‘NO VOCAL’ en caso contrario, 
+     el programa termina cuando se introduce un espacio.*/
     
+     function Ejercicio3tp2(){ 
+     let letra 
+     
+    while(letra!==" "){
+         letra=prompt("Ingresa una letra")
+        if(letra==="A" || letra==="a" || letra==="E" || letra==="e"|| letra==="I" || letra==="i" || letra==="O" || letra==="o" || letra==="U" || letra==="u"){
+            console.log("Es vocal")
+        }else{
+            console.log("No es vocal")
+        }
+    }
+    
+     }
+     //Ejercicio3tp2()
+
+     /*4- Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual durante 6 años. 
+     ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido en cada uno de los 6 años?*/ 
+
+     function Ejercicio4tp2(){ 
+     let sueldo=1500
+     
+     for(let años=1; años <= 6; años++){
+        sueldo=sueldo+(sueldo*0.10)
+        console.log("En el año "+años+ " su sueldo fue de"+ sueldo)
+     }
+
+    }
+     //Ejercicio4tp2()
+
+
+     /*5- Una casa de hamburguesas sencillas (S), dobles (D) y triples (T), las cuales tienen un costo de $20, $25 y $28
+      respectivamente. La empresa acepta tarjetas de crédito con un cargo de 5 % sobre la compra. Suponiendo que los 
+      clientes adquieren N hamburguesas, las cuales pueden ser de diferente tipo, realice un algoritmo para determinar 
+      cuánto deben pagar. */ 
+
+      function Ejercicio5tp2(){
+
+
+
+      }
+      Ejercicio5tp2()
